@@ -36,6 +36,7 @@ mkdir -p "$dir_npp/icons"
 unzip -q -o "$npp" -d "$dir_npp"
 
 pushd "$dir_npp" >/dev/null
+
 #Extract the icons
 wrestool -x -t 14 notepad++.exe -o icons/
 find icons -maxdepth 1 -type f ! -name 'notepad++.exe_14_100.ico' -delete
@@ -67,6 +68,7 @@ printf '%s\n' \
 npp_desktop="$HOME/Desktop/notepad++.desktop"
 cp -f "notepad++.desktop" "$npp_desktop"
 chmod +x "$npp_desktop"
+
 popd >/dev/null
 
 #Make Notepad++ executeable
