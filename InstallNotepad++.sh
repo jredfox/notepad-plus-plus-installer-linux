@@ -13,6 +13,10 @@ if ! output=$(wrestool "--help" > /dev/null 2>&1); then
     echo "wrestool command not found"
 	missing="T"
 fi
+if ! output=$(icotool "--help" > /dev/null 2>&1); then
+    echo "wrestool command not found"
+    missing="T"
+fi
 if ! output=$(wine "--help" > /dev/null 2>&1); then
     echo "wine command not found"
 	missing="T"
@@ -34,9 +38,8 @@ unzip -q -o "$npp" -d "$dir_npp"
 pushd "$dir_npp" >/dev/null
 #Extract the icons
 wrestool -x -t 14 notepad++.exe -o icons/
-for ico in icons/*.ico; do
-    icotool -x "$ico" -o icons/
-done
+find icons -maxdepth 1 -type f ! -name 'notepad++.exe_14_100.ico' -delete
+icotool -x "icons/notepad++.exe_14_100.ico" -o icons/
 #Create run.sh script
 printf '%s\n' \
 '#!/bin/bash' \
