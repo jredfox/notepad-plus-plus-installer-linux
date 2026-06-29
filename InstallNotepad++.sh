@@ -3,15 +3,15 @@
 #Check Deps
 if ! output=$(zip "--help" > /dev/null 2>&1); then
     echo "zip command not found"
-	missing="T"
+    missing="T"
 fi
 if ! output=$(unzip "--help" > /dev/null 2>&1); then
     echo "unzip command not found"
-	missing="T"
+    missing="T"
 fi
 if ! output=$(wrestool "--help" > /dev/null 2>&1); then
     echo "wrestool command not found"
-	missing="T"
+    missing="T"
 fi
 if ! output=$(icotool "--help" > /dev/null 2>&1); then
     echo "wrestool command not found"
@@ -19,7 +19,7 @@ if ! output=$(icotool "--help" > /dev/null 2>&1); then
 fi
 if ! output=$(wine "--help" > /dev/null 2>&1); then
     echo "wine command not found"
-	missing="T"
+    missing="T"
 fi
 if [[ "$missing" == "T" ]]; then
     echo "Missing Deps! try running sudo apt update && sudo apt install zip unzip icoutils wine"
