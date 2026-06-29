@@ -73,3 +73,5 @@ popd >/dev/null
 
 #Make Notepad++ executeable
 chmod -R +x "$dir_npp"
+
+echo "Notepad++ Has been Installed For the Current User!"
