@@ -3,6 +3,7 @@
  
 # Usage:
 - Download Notepad++ from their official website https://notepad-plus-plus.org/
+- sudo apt update && sudo apt install zip unzip icoutils wine
 - bash `InstallNotepad++.sh`
  
  # Legal
