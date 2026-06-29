@@ -47,7 +47,7 @@ printf '%s\n' \
 'cd "$(dirname "${BASH_SOURCE[0]:-$0}")"' \
 'exec wine notepad++.exe' > run.sh
 
-#Create .DESKTOP file and copy it to the desktop
+#Create .DESKTOP File and Copy it to the Desktop
 printf '%s\n' \
 "[Desktop Entry]" \
 "Categories=TextEditor;Development;" \
