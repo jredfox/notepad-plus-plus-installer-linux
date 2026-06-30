@@ -83,6 +83,7 @@ printf '%s\n' \
 npp_desktop="$HOME/Desktop/notepad++.desktop"
 npp_desktop_srch="$HOME/.local/share/applications/notepad++.desktop"
 cp -f "notepad++.desktop" "$npp_desktop"
+mkdir -p "$HOME/.local/share/applications"
 cp -f "notepad++.desktop" "$npp_desktop_srch"
 chmod +x "$npp_desktop"
 chmod +x "$npp_desktop_srch"
