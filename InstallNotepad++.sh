@@ -81,8 +81,11 @@ printf '%s\n' \
 "X-KDE-Username=" \
 > "notepad++.desktop"
 npp_desktop="$HOME/Desktop/notepad++.desktop"
+npp_desktop_srch="$HOME/.local/share/applications/notepad++.desktop"
 cp -f "notepad++.desktop" "$npp_desktop"
+cp -f "notepad++.desktop" "$npp_desktop_srch"
 chmod +x "$npp_desktop"
+chmod +x "$npp_desktop_srch"
 
 popd >/dev/null
 
