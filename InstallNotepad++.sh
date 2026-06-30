@@ -92,4 +92,7 @@ popd >/dev/null
 #Make Notepad++ executeable
 chmod -R +x "$dir_npp"
 
+#Update .DESKTOP so it shows in search without reboot
+update-desktop-database "$HOME/.local/share/applications"
+
 echo "Notepad++ Has been Installed For the Current User!"
