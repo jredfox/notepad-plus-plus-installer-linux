@@ -2,7 +2,7 @@
  Install Notepad++ On Linux the Easy Way!
  
 # Usage:
-- Download Notepad++ from their official website https://notepad-plus-plus.org/
+- Download Notepad++ Portable Zip from their official website [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/downloads/)
 - **sudo** apt update && **sudo** apt install zip unzip icoutils wine
 - **bash** `InstallNotepad++.sh` to install with the normal icon
 - **bash** `InstallNotepad++.sh T` to install with the classic icon
