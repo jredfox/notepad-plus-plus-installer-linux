@@ -60,7 +60,8 @@ icotool -x "icons/notepad++.exe_14_100.ico" -o icons/
 #Create run.sh script
 printf '%s\n' \
 '#!/bin/bash' \
-'cd "$(dirname "${BASH_SOURCE[0]:-$0}")"' \
+'SCRIPTPATH="$( cd -- "$(dirname "${BASH_SOURCE[0]:-$0}")" >/dev/null 2>&1 ; pwd -P )"' \
+'cd "$SCRIPTPATH"' \
 'exec wine notepad++.exe' > run.sh
 
 #Create .DESKTOP File and Copy it to the Users Current Desktop
