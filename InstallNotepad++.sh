@@ -29,6 +29,11 @@ fi
 read -p "Enter Notepad++ Zip File:" npp
 npp=$(echo "$npp" | tr -d "\"'")
 
+if [ ! -f "$npp" ]; then
+    echo "File Doesn't Exist $npp"
+    exit 1
+fi
+
 #Install Notepad++ to ~/notepad++
 dir_npp="$HOME/notepad++"
 rm -rf "$dir_npp"
