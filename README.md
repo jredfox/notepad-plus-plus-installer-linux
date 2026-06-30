@@ -1,9 +1,5 @@
-# Discontinued
-- Project is discontinued due to the fact you can now install windows applications on wine calling `wine npp.<version>.Installer.x64.exe`! When I looked online there was no documentation that it could be done through wine nor did chatgpt suggest it either
-- The only Real use is using `bash InstallWineDarkTheme.sh` to make wine use the dark theme. On windows it's two registry edits on wine it's a whole process involving lots of registry edits
-
 # notepad-plus-plus-installer-linux
- Install Notepad++ On Linux the Easy Way!
+ Install Notepad++ On Linux the Easy Way! While you can on newer wine now install any windows application using wine <my_installer.exe> this gives you a consistent correct notepad++ icon, and provides the option to correctly install a dark theme on wine
  
 # Usage:
 - Download Notepad++ Portable Zip from their official website [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/downloads/)
