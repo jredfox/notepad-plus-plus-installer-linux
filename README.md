@@ -4,10 +4,10 @@
 # Usage:
 - Download Notepad++ from their official website https://notepad-plus-plus.org/
 - sudo apt update && sudo apt install zip unzip icoutils wine
-- bash `InstallNotepad++.sh`
+- bash `InstallNotepad++.sh` to install with the normal icon
+- bash `InstallNotepad++.sh T` to install with the classic icon
 
 # Using Different Icons:
-- Install notepad++ with the classic icon `bash InstallNotepad++.sh T`
 - Notepad++ contains 10 icons located inside of `~/notepad++/icons` you can edit the `notepad++.desktop` found on your desktop and change the icon path to match one of the icons in there. Example: `/home/jredfox/notepad++/icons/notepad++.exe_14_100_2_32x32x8.png`
 
 # System Requirements
