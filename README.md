@@ -17,4 +17,4 @@
 - Intel 64 bit processor (x86_64, x64, AMD64) or Intel 32 bit processor (x86, x86_32, i386)
  
  # Legal
- This project contains no code from notepad++ and isn't asociated with anyone from notepad++. It's an offline installer for notepad++ on linux.
+ This project contains no code from notepad++ and isn't asociated with anyone from notepad++. It's an offline installer so you can install notepad++ on linux
