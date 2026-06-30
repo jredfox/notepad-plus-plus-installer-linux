@@ -34,6 +34,13 @@ if [ ! -f "$npp" ]; then
     exit 1
 fi
 
+#Switch between current and classic icon
+if [[ "$1" == T* ]]; then
+    icon_npp="notepad++.exe_14_100_7_48x48x32.png"
+else
+    icon_npp="notepad++.exe_14_100_5_128x128x32.png"
+fi
+
 #Install Notepad++ to ~/notepad++
 dir_npp="$HOME/notepad++"
 rm -rf "$dir_npp"
@@ -57,7 +64,7 @@ printf '%s\n' \
 "[Desktop Entry]" \
 "Categories=TextEditor;Development;" \
 "Exec=$dir_npp/run.sh" \
-"Icon=$dir_npp/icons/notepad++.exe_14_100_5_128x128x32.png" \
+"Icon=$dir_npp/icons/$icon_npp" \
 "MimeType=" \
 "Name=Notepad++" \
 "Path=" \
