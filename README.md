@@ -10,6 +10,9 @@
 # Using Different Icons:
 - Notepad++ contains 10 icons located inside of `~/notepad++/icons` you can edit the `notepad++.desktop` found on your desktop and change the icon path to match one of the icons in there. Example: `/home/jredfox/notepad++/icons/notepad++.exe_14_100_2_32x32x8.png`
 
+# Using Dark Mode:
+- **bash** `InstallWineDarkTheme.sh`
+
 # System Requirements
 - Intel 64 bit processor (x86_64, x64, AMD64) or Intel 32 bit processor (x86, x86_32, i386)
  
