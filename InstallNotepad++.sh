@@ -52,7 +52,7 @@ printf '%s\n' \
 "[Desktop Entry]" \
 "Categories=TextEditor;Development;" \
 "Exec=$dir_npp/run.sh" \
-"Icon=$dir_npp/icons/notepad++.exe_14_100_4_256x256x32.png" \
+"Icon=$dir_npp/icons/notepad++.exe_14_100_5_128x128x32.png" \
 "MimeType=" \
 "Name=Notepad++" \
 "Path=" \
