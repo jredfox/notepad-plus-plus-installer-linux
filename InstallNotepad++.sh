@@ -57,7 +57,7 @@ wrestool -x -t 14 notepad++.exe -o icons/
 find icons -maxdepth 1 -type f ! -name 'notepad++.exe_14_100.ico' -delete
 icotool -x "icons/notepad++.exe_14_100.ico" -o icons/
 
-#Create the run.sh script
+#Create run.sh script
 printf '%s\n' \
 '#!/bin/bash' \
 'cd "$(dirname "${BASH_SOURCE[0]:-$0}")"' \
