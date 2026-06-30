@@ -26,6 +26,9 @@ if [[ "$missing" == "T" ]]; then
     exit 1
 fi
 
+#Prevents Errors
+cd "$HOME"
+
 read -p "Enter Notepad++ Zip File:" npp
 npp=$(echo "$npp" | tr -d "\"'")
 
